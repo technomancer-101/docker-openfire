@@ -1,5 +1,8 @@
 # Changelog
 
+**4.1.6-1-openjdk**
+- java: use OpenJDK 8u151
+
 **4.1.6**
 - openfire: upgrade to 4.1.6
 - java: upgrade to 8u151
