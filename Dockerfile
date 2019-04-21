@@ -1,13 +1,13 @@
-FROM gizmotronic/oracle-java:8u161
+FROM gizmotronic/openjdk:8u191
 MAINTAINER gizmotronic@gmail.com
 
-ENV OPENFIRE_VERSION=4.2.3 \
+ENV OPENFIRE_VERSION=4.3.1 \
     OPENFIRE_USER=openfire \
     OPENFIRE_DATA_DIR=/var/lib/openfire \
     OPENFIRE_LOG_DIR=/var/log/openfire
 
 RUN apt-get update \
- && DEBIAN_FRONTEND=noninteractive apt-get install -y sudo \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y sudo wget \
  && echo "Downloading openfire_${OPENFIRE_VERSION}_all.deb ..." \
  && wget --no-verbose "http://download.igniterealtime.org/openfire/openfire_${OPENFIRE_VERSION}_all.deb" -O /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && dpkg -i /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
