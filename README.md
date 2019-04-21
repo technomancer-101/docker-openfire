@@ -1,4 +1,4 @@
-# gizmotronic/openfire:4.3.1
+# gizmotronic/openfire:4.3.2
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -17,7 +17,7 @@
 
 Openfire is a real time collaboration (RTC) server licensed under the Open Source Apache License. It uses the only widely adopted open protocol for instant messaging, XMPP (also called Jabber). Openfire is incredibly easy to setup and administer, but offers rock-solid security and performance.
 
-Due to Oracle Java license changes, this image is built exclusively using OpenJDK starting with Openfire 4.3.1.
+Due to Oracle Java license changes, this image is built exclusively using OpenJDK starting with Openfire 4.3.2.
 This project is otherwise almost entirely identical to [sameersbn/openfire](/sameersbn/openfire).
 
 ## Contributing
@@ -47,7 +47,7 @@ If the above recommendations do not help then [report your issue](../../issues/n
 Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/gizmotronic/openfire) and is the recommended method of installation.
 
 ```bash
-docker pull gizmotronic/openfire:4.3.1
+docker pull gizmotronic/openfire:4.3.2
 ```
 
 Alternatively you can build the image yourself.
@@ -64,7 +64,7 @@ Start Openfire using:
 docker run --name openfire -d --restart=always \
   --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 \
   --volume /srv/docker/openfire:/var/lib/openfire \
-  gizmotronic/openfire:4.3.1
+  gizmotronic/openfire:4.3.2
 ```
 
 *Alternatively, you can use the sample [docker-compose.yml](docker-compose.yml) file to start the container using [Docker Compose](https://docs.docker.com/compose/)*
@@ -91,7 +91,7 @@ You may append options to the startup command to configure the JVM:
 ```bash
 docker run -name openfire -d \
   [DOCKER_OPTIONS] \
-  gizmotronic/openfire:4.3.1 \
+  gizmotronic/openfire:4.3.2 \
   -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode
 ```
 
@@ -112,7 +112,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull gizmotronic/openfire:4.3.1
+  docker pull gizmotronic/openfire:4.3.2
   ```
 
   2. Stop the currently running image:
@@ -132,7 +132,7 @@ To upgrade to newer releases:
   ```bash
   docker run -name openfire -d \
     [OPTIONS] \
-    gizmotronic/openfire:4.3.1
+    gizmotronic/openfire:4.3.2
   ```
 
 ## Shell Access
