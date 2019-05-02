@@ -1,4 +1,4 @@
-FROM gizmotronic/openjdk:8u191
+FROM openjdk:8u212-jdk-slim
 MAINTAINER gizmotronic@gmail.com
 
 ENV OPENFIRE_VERSION=4.3.2 \
