@@ -28,6 +28,12 @@ If you find this image useful here's how you can help:
 - Help users resolve their [issues](../../issues?q=is%3Aopen+is%3Aissue).
 - Support the development of this image with a [donation](http://www.damagehead.com/donate/)
 
+## Known issues
+
+### Openfire setup fails to save configuration
+
+Insufficient input validation in the Openfire setup process can cause failures when saving the configuration file, even when the built-in tests run successfully.
+
 ## Other issues
 
 Before reporting a bug please try updating Docker to the latest version and check if it resolves the issue. Refer to the Docker [installation guide](https://docs.docker.com/installation) for instructions.
