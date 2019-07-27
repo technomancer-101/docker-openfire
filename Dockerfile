@@ -1,7 +1,7 @@
-FROM openjdk:8u212-jdk-slim
+FROM openjdk:8u222-jdk-slim
 MAINTAINER gizmotronic@gmail.com
 
-ENV OPENFIRE_VERSION=4.3.2 \
+ENV OPENFIRE_VERSION=4.4.0 \
     OPENFIRE_USER=openfire \
     OPENFIRE_DATA_DIR=/var/lib/openfire \
     OPENFIRE_LOG_DIR=/var/log/openfire
@@ -10,8 +10,9 @@ RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y sudo wget \
  && echo "Downloading openfire_${OPENFIRE_VERSION}_all.deb ..." \
  && wget --no-verbose "http://download.igniterealtime.org/openfire/openfire_${OPENFIRE_VERSION}_all.deb" -O /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
- && dpkg -i /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
+ && dpkg -i --force-depends /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && mv /var/lib/openfire/plugins/admin /usr/share/openfire/plugin-admin \
+ && ln -s /usr/local/openjdk-8/bin/java /usr/bin/java \
  && rm -rf openfire_${OPENFIRE_VERSION}_all.deb \
  && rm -rf /var/lib/apt/lists/*
 
