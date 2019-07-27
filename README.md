@@ -34,6 +34,10 @@ If you find this image useful here's how you can help:
 
 Insufficient input validation in the Openfire setup process can cause failures when saving the configuration file, even when the built-in tests run successfully.
 
+### Openfire doesn't write logs to the normal location
+
+Openfire 4.3 and later use Log4j 2, which uses a new configuration file. Please make sure you include a `log4j2.xml` file in your configuration directory, and use the newest 4.3 or 4.4 image available on Docker Hub.
+
 ## Other issues
 
 Before reporting a bug please try updating Docker to the latest version and check if it resolves the issue. Refer to the Docker [installation guide](https://docs.docker.com/installation) for instructions.
