@@ -1,5 +1,9 @@
 # Changelog
 
+**4.3.2-2**
+- openjdk: upgrade to 8u222
+- Resolve problem with log4j configuration
+
 **4.3.2-1**
 - openjdk: upgrade to 8u212 using official image
 
