@@ -17,7 +17,7 @@
 
 Openfire is a real time collaboration (RTC) server licensed under the Open Source Apache License. It uses the only widely adopted open protocol for instant messaging, XMPP (also called Jabber). Openfire is incredibly easy to setup and administer, but offers rock-solid security and performance.
 
-Due to Oracle Java license changes, this image is built exclusively using OpenJDK starting with Openfire 4.4.0.
+Due to Oracle Java license changes, this image is built exclusively using OpenJDK starting with Openfire 4.3.2.
 This project is otherwise almost entirely identical to [sameersbn/openfire](/sameersbn/openfire).
 
 ## Contributing
