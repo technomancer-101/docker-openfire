@@ -1,5 +1,8 @@
 # Changelog
 
+**4.4.1**
+- openfire: upgrade to 4.4.1
+
 **4.4.0-1**
 - Resolve problem with log4j configuration
 
