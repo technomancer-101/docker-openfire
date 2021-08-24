@@ -1,4 +1,4 @@
-# gizmotronic/openfire:4.4.4
+# technomancer-101/openfire:4.6.4
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -13,12 +13,12 @@
 
 # Introduction
 
+This image is a fork of gizmotronic/openfire to keep everything up-to-date.
+
 `Dockerfile` to create a [Docker](https://www.docker.com/) container image for [Openfire](http://www.igniterealtime.org/projects/openfire/).
 
 Openfire is a real time collaboration (RTC) server licensed under the Open Source Apache License. It uses the only widely adopted open protocol for instant messaging, XMPP (also called Jabber). Openfire is incredibly easy to setup and administer, but offers rock-solid security and performance.
 
-Due to Oracle Java license changes, this image is built exclusively using OpenJDK starting with Openfire 4.3.2.
-This project is otherwise almost entirely identical to [sameersbn/openfire](/sameersbn/openfire).
 
 ## Contributing
 
@@ -26,7 +26,6 @@ If you find this image useful here's how you can help:
 
 - Send a pull request with your awesome features and bug fixes
 - Help users resolve their [issues](../../issues?q=is%3Aopen+is%3Aissue).
-- Support the development of this image with a [donation](http://www.damagehead.com/donate/)
 
 ## Known issues
 
