@@ -1,12 +1,12 @@
 version: '2'
 services:
   openfire:
-    image: technomancer-101/openfire:4.6.4
+    image: technomancer101/openfire:4.6.4
     ports:
       - "9090:9090/tcp"
-      - "9092:9092/tcp"
+      - "9091:9091/tcp"
       - "5222:5222/tcp"
       - "7443:7443/tcp"
     volumes:
-      - /srv/docker/openfire/data:/var/lib/openfire
-      - /srv/docker/openfire/logs:/var/log/openfire
+      - /opt/openfire/data:/var/lib/openfire
+      - /opt/openfire/logs:/var/log/openfire
