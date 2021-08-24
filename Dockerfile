@@ -18,6 +18,6 @@ RUN apt-get update \
 COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
 
-EXPOSE 5222/tcp 5223/tcp 7443/tcp 9090/tcp 9092/tcp
+EXPOSE 5222/tcp 5223/tcp 7443/tcp 9090/tcp 9091/tcp
 VOLUME ["${OPENFIRE_DATA_DIR}"]
 ENTRYPOINT ["/sbin/entrypoint.sh"]
