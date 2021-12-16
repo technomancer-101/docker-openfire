@@ -1,4 +1,4 @@
-# technomancer-101/openfire:4.6.4
+# technomancer-101/openfire:4.6.5
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -12,6 +12,8 @@
 - [References](#references)
 
 # Introduction
+
+This image has been patched to deal with the Log4Shell vulnerability. you should not run any version older than 4.6.5, especially if your server is exposed to the internet.
 
 This image is a fork of gizmotronic/openfire to keep everything up-to-date.
 
