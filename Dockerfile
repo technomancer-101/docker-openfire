@@ -1,6 +1,6 @@
 FROM openjdk:11-jre-slim
 
-ENV OPENFIRE_VERSION=4.6.5 \
+ENV OPENFIRE_VERSION=4.7.3 \
     OPENFIRE_USER=openfire \
     OPENFIRE_DATA_DIR=/var/lib/openfire \
     OPENFIRE_LOG_DIR=/var/log/openfire
