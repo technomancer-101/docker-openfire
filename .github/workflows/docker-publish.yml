@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag technomancer101/docker-openfire:latest
+      run: docker build . --file Dockerfile --tag technomancer101/openfire:latest
       
     - name: Docker Push
-      run: docker push technomancer101/docker-openfire
+      run: docker push technomancer101/openfire
